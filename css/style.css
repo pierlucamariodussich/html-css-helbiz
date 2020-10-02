@@ -1,0 +1,94 @@
+html{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.top_h{
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* centratura verticale del contenuto */
+.ghost_align::before{
+    content:"";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+/* element */
+
+/* NAV */
+nav{
+  background-color: white;
+}
+
+/* logo */
+.top_h img{
+  width: 80px;
+}
+
+.top_h .content{
+  line-height: 60px;
+}
+
+/* navbar e navlang */
+
+.nav_menu{
+
+  text-align: right;
+}
+
+.nav_lang{
+  text-align: left;
+}
+
+.nav_lang li:not(:last-child) a {
+   border-right: 1px solid black;
+   padding-right: 10px;
+}
+
+[class*="nav_"] li {
+  display: inline-block;
+
+}
+
+[class*="nav_"] li a{
+  text-decoration: none;
+  color: black;
+  text-transform:uppercase;
+  padding-left: 20px;
+}
+
+/* navbar_mobile e tablet */
+.burger{
+  text-align: right;
+}
+
+ .burger .fa{
+   color: black;
+ }
+
+ .fa-lg{
+   height: 28px;
+ }
+
+
+/* DEBUG CSS */
+
+
+
+
+
+
+
+.debug header{
+  background-color: red;
+  height: 1800px;
+}
