@@ -4,16 +4,26 @@ html{
   font-size: 15px;
 }
 
-.top_h{
+.container{
   width: 94%;
   margin-left: auto;
   margin-right: auto;
 }
 
+.fixed {
+  width:100vw;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
 /* font */
 
 h1 {
   font-size: 38px;
+  font-weight: bold;
+}
+h2{
+  font-size: 24px;
   font-weight: bold;
 }
 
@@ -43,6 +53,8 @@ h5{
 nav{
   background-color: white;
 }
+
+
 
 /* logo */
 .top_h img{
@@ -93,6 +105,9 @@ nav{
  .fa-lg{
    height: 28px;
  }
+
+ /* menu tendina */
+
 
 /* HEADER */
 .hero {
@@ -176,7 +191,32 @@ nav{
   color: #1e84d3;
 }
 
+/* SECOND */
 
+.second{
+  background-image: url(../img/bg_section_second.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:70vh;
+}
+.second .container{
+  widht
+}
+
+.empty{
+  height: 180px;
+}
+.second img{
+  margin-left: 30px;
+  width: 80%;
+}
+
+.step{
+  margin-left: 20px;
+  position: relative;
+  top:350px;
+
+}
 
 /* DEBUG CSS */
 
@@ -192,6 +232,10 @@ nav{
   border: 1px solid white;
   height:100px;
 }
+
+
+
+
 
 
 /* media query */
