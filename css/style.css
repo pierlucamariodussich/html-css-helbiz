@@ -209,9 +209,18 @@ nav{
   height: 180px;
 }
 
-.empty2{
+.empty2 {
   height: 250px;
 }
+
+.empty3{
+  height: 250px;
+}
+
+
+
+
+
 
 
 .second img{
@@ -367,7 +376,14 @@ nav{
     height: 30px;
   }
   .empty2{
-    height: 500px;
+    height: 100px;
+  }
+
+  .empty3{
+
+      height: 500px;
+
+
   }
 
   .step{
