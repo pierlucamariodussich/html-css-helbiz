@@ -17,6 +17,10 @@ h1 {
   font-weight: bold;
 }
 
+h3{
+  font-size: 24px;
+  font-weight: lighter;
+}
 h5{
   font-size: 15px;
   font-weight:lighter;
@@ -92,33 +96,32 @@ nav{
 
 /* HEADER */
 .hero {
-
-  height:90vh;
+  height:555px;
   background-image: url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
-
 }
-
-
-
-.hero .content {
-  text-align: center;
-  color: white;
-  width: 90%;
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
-
 .hero::before {
   content: '';
   position: absolute;
   top: 60;
   left: 0;
   width: 100%;
-  height: 90vh;
-  background-color: rgba(0,0,0,0.5);
+  height:555px;
+  background-color: rgba(0,0,0,0.3);
+}
+.hero{
+  position: relative;
+}
+
+
+.bg_over .content {
+  text-align: center;
+  color: white;
+  width: 92%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
 .app_store img{
@@ -126,18 +129,81 @@ nav{
   margin-top: 20px;
 }
 
+/* MAIN */
+
+/* FIRST SECTION  */
+.first{
+
+}
+.first .container{
+  margin: 60px auto;
+
+}
+.grey{
+  background-color: #fafafa;
+  text-align: center;
+
+}
+.first .content{
+  color: black;
+  padding:40px;
+}
+
+.first > .container > [class*="col-"] > .grey > .content > img:first-child{
+  width: 40%;
+}
+.first > .container > [class*="col-"] > .grey > .content > img:last-child{
+  width: 80%;
+}
+
+.mono{
+    width: 90%;
+    margin-right: 20px;
+    margin-left: auto;
+
+}
+.bike{
+  width: 90%;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+.separator{
+  height: 30px;
+}
+.first a{
+  text-decoration: none;
+  color: #1e84d3;
+}
+
+
 
 /* DEBUG CSS */
 
-.debug header > .container{
+.debug .first > .container{
+  border: 1px solid white;
+
+}
+.debug .first> [class*=col-]{
+  border: 1px solid white;
+}
+
+.debug .first > .content{
   border: 1px solid white;
   height:100px;
 }
-.debug header > [class*=col-]{
-  border: 1px solid white;
 
-}
 
-.debug header > .content{
-  border: 1px solid white;
+/* media query */
+@media screen and (max-width: 768px) {
+  .mono{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15px;
+  }
+  .bike{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
 }
